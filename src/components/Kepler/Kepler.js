@@ -14,19 +14,19 @@ class Kepler extends React.Component {
     }
 
     componentWillMount(){
-        if(sessionStorage.getItem("userData")){
+        if(sessionStorage.getItem("this.state")){
             console.log("Call for map now");
         }
-        else{
-            this.setState({redirect: true});
-        }
+        // else{
+        //     this.setState({redirect: true});
+        // }
     }
     // componentDidUpdate = (props) => {
     
     // }
 
     logout(){
-        sessionStorage.setItem("userData", '');
+        sessionStorage.setItem("this.state", '');
         sessionStorage.clear();
         this.setState({redirect: true});
     }

@@ -55,7 +55,7 @@ function Map() {
   return (
     <KeplerGl
       id="covid"
-      mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_API}
+      mapboxApiAccessToken="pk.eyJ1IjoiYWF5dXNoaXNvbWFuaSIsImEiOiJja2U4czlzY3MxemMyMnNwZGJmYXB4aHdkIn0.JQOzoSnusFvUb7X4iZaQjA"
       width={window.innerWidth}
       height={window.innerHeight}
     />
