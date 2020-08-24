@@ -1,3 +1,14 @@
+This project was made using react and the map has been created over kepler.gl
+The map api was created over mapbox.
+The Database was created over firebase real time database.
+I have used session storage for staying logged in till it hasnt been logged out yet. /kepler and /Map have been restricted for the use wihtout login.
+When you sign up, if the user name already exists in the database, it won't push anything in it. If the user doesnt exist, it will push it then.
+
+**A lot of checks are done using only console.log and not alerts. I will update that soon!
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
