@@ -5,6 +5,7 @@ import Signup from './components/signup/Signup';
 import Kepler from './components/Kepler/Kepler';
 import NotFound from './components/NotFound/NotFound';
 import Maps from './components/Maps/Maps';
+import Footer from './components/Footer/Footer';
 
 
 const Routes = () => (
@@ -14,6 +15,7 @@ const Routes = () => (
             <Route exact path='/Signup' component={Signup} />
             <Route exact path='/Kepler' component={Kepler} />
             <Route exact path='/Maps' component={Maps} />
+            <Route exact path='/Footer' component={Footer} />
             <Route exact path='*' component={NotFound} />
         </Switch>
     </BrowserRouter>

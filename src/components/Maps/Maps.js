@@ -5,6 +5,8 @@ import { taskMiddleware } from "react-palm/tasks";
 import { Provider, useDispatch } from "react-redux";
 import KeplerGl from "kepler.gl";
 import { addDataToMap } from "kepler.gl/actions";
+import {isUserLoggedIn} from '../utilities/IsUserLoggedIn';
+import { Redirect } from 'react-router-dom';
 import useSwr from "swr";
 
 const reducers = combineReducers({
@@ -14,7 +16,13 @@ const reducers = combineReducers({
 const store = createStore(reducers, {}, applyMiddleware(taskMiddleware));
 
 export default function Maps() {
+  if (!isUserLoggedIn()) {
+    return <Redirect to={'/'} />
+} else {
+
+
   return (
+    
     <Provider store={store}>
       <Map />
     </Provider>
@@ -22,6 +30,7 @@ export default function Maps() {
 }
 
 function Map() {
+
   const dispatch = useDispatch();
   const { data } = useSwr("covid", async () => {
     const response = await fetch(
@@ -60,5 +69,6 @@ function Map() {
       height={window.innerHeight}
     />
   );
+}
 }
 

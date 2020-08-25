@@ -6,10 +6,10 @@ export function PostData(type, userData){
     // let BaseURL = 'http://localhost/PHP-Slim-Restful/api/';
     return new Promise((resolve, reject) => {
         console.log("Here");
-        console.log(userData.Email);
-        console.log(userData.Password);
+        console.log(userData.email);
+        console.log(userData.password);
 
-        if(userData.Email === "somani" && userData.Password === "somani")
+        if(userData.email !== null && userData.password !== null)
         resolve("success");
         else
         resolve("failure");
