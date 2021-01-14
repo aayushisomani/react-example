@@ -1,12 +1,13 @@
 import firebase from 'firebase'
 const config = {
-    apiKey: "AIzaSyAgxYDZYrs10SABNgXZMPSVOrapDiSvABA",
-    authDomain: "login-ia-36ea7.firebaseapp.com",
-    databaseURL: "https://login-ia-36ea7.firebaseio.com",
-    projectId: "login-ia-36ea7",
-    storageBucket: "login-ia-36ea7.appspot.com",
-    messagingSenderId: "110228313668",
-    appId: "1:110228313668:web:339a0de8f1a04181538e11"
+    apiKey: "AIzaSyBJnKk4Q7P5qBkjUJSZltsZhc1TN6fDXEc",
+    authDomain: "login-kepler.firebaseapp.com",
+    databaseURL: "https://login-kepler-default-rtdb.firebaseio.com/",
+    projectId: "login-kepler",
+    storageBucket: "login-kepler.appspot.com",
+    messagingSenderId: "958276903142",
+    appId: "1:958276903142:web:95a15c375501a1179fdb27",
+    measurementId: "G-LBHECLE01B"
 };
 firebase.initializeApp(config);
 export default firebase;
